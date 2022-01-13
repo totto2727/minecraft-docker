@@ -9,18 +9,27 @@ services:
     volumes:
       - world:/opt/minecraft-server/world
       - logs:/opt/minecraft-server/logs
+      # 必要であれば、各ファイルの設定を行い、以下のコメントアウトを解除する。
       # - ./minecraft-server/server.properties:/opt/minecraft-server/server.properties
       # - ./minecraft-server/mods:/opt/minecraft-server/mods
       # - ./minecraft-server/whitelist.json:/opt/minecraft-server/whitelist.json
       # - ./minecraft-server/banned-players.json:/opt/minecraft-server/banned-players.json
       # - ./minecraft-server/banned-ips.json:/opt/minecraft-server/banned-ips.json
+    depends_on:
+      - aws-cli
 
-  ubuntu:
-    image: ubuntu:latest
-    tty: true
+  aws-cli:
+    build: ./aws-cli
+    # tty: true
     volumes:
       - world:/opt/minecraft-server/world
       - logs:/opt/minecraft-server/logs
+    environment:
+      - MINECRAFT_SERVER_NAME=${MINECRAFT_SERVER_NAME}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - S3_BUCKET_NAME=${S3_BUCKET_NAME}
 
 volumes:
   world:
