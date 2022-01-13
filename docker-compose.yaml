@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  minecraft-server:
+    build: ./minecraft-server
+    # tty: true
+    ports:
+      - 25565:25565
+    volumes:
+      - world:/opt/minecraft-server/world
+      - logs:/opt/minecraft-server/logs
+      # - ./minecraft-server/server.properties:/opt/minecraft-server/server.properties
+      # - ./minecraft-server/mods:/opt/minecraft-server/mods
+      # - ./minecraft-server/whitelist.json:/opt/minecraft-server/whitelist.json
+      # - ./minecraft-server/banned-players.json:/opt/minecraft-server/banned-players.json
+      # - ./minecraft-server/banned-ips.json:/opt/minecraft-server/banned-ips.json
+
+  ubuntu:
+    image: ubuntu:latest
+    tty: true
+    volumes:
+      - world:/opt/minecraft-server/world
+      - logs:/opt/minecraft-server/logs
+
+volumes:
+  world:
+    external: false
+  logs:
+    external: false
