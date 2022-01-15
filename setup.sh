@@ -1,6 +1,6 @@
 #/bin/bash
 
-amazon-linux-extras install docker
+amazon-linux-extras install docker -y
 systemctl enable docker
 systemctl start docker
 mkdir -p ~/.docker/cli-plugins/
