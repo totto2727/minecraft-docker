@@ -8,5 +8,5 @@ RUN yum install -y zip &&\
     echo 'alias python=python3.8' >> ~/.bashrc &&\
     echo 'alias pip=pip3.8' >> ~/.bashrc
 
-# ENTRYPOINT /opt/scripts/launch.sh && /bin/bash
-ENTRYPOINT /bin/bash
+ENTRYPOINT /opt/scripts/launch.sh && /bin/bash
+# ENTRYPOINT /bin/bash
