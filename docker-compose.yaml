@@ -1,14 +1,23 @@
 version: '3'
 
 services:
-  minecraft-server:
-    build: ./minecraft-server
-    # tty: true
+  nginx:
+    image: nginx
     ports:
       - 25565:25565
     volumes:
-      - world:/opt/minecraft-server/world
-      - logs:/opt/minecraft-server/logs
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - minecraft-server
+
+  minecraft-server:
+    build: ./minecraft-server
+    # tty: true
+    # ports:
+    #   - 25565:25565
+    volumes:
+      - world:/opt/minecraft-server/world:rw
+      - logs:/opt/minecraft-server/logs:rw
       # 必要であれば、各ファイルの設定を行い、以下のコメントアウトを解除する。
       # - ./minecraft-server/server.properties:/opt/minecraft-server/server.properties
       # - ./minecraft-server/mods:/opt/minecraft-server/mods
@@ -20,10 +29,10 @@ services:
 
   aws-cli:
     build: ./aws-cli
-    # tty: true
+    tty: true
     volumes:
-      - world:/opt/minecraft-server/world
-      - logs:/opt/minecraft-server/logs
+      - world:/opt/minecraft-server/world:ro
+      - logs:/opt/minecraft-server/logs:ro
     environment:
       - MINECRAFT_SERVER_NAME=${MINECRAFT_SERVER_NAME}
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
