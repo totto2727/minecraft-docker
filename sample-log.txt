@@ -1,0 +1,67 @@
+[03:07:52] [main/INFO]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 39.0.19, --fml.mcVersion, 1.18.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20211210.034407]
+[03:07:52] [main/INFO]: ModLauncher 9.0.7+91+master.8569cdf starting: java version 17.0.1 by Oracle Corporation
+[03:07:52] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/opt/minecraft-server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2319! Service=ModLauncher Env=SERVER
+[03:07:52] [main/INFO]: Found mod file fmlcore-1.18.1-39.0.19.jar of type LIBRARY with locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@4b20ca2b
+[03:07:52] [main/INFO]: Found mod file javafmllanguage-1.18.1-39.0.19.jar of type LANGPROVIDER with locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@4b20ca2b
+[03:07:52] [main/INFO]: Found mod file mclanguage-1.18.1-39.0.19.jar of type LANGPROVIDER with locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@4b20ca2b
+[03:07:52] [main/INFO]: Found mod file server-1.18.1-20211210.034407-srg.jar of type MOD with locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@4b20ca2b
+[03:07:52] [main/INFO]: Found mod file forge-1.18.1-39.0.19-universal.jar of type MOD with locator net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@4b20ca2b
+[03:07:53] [main/INFO]: Launching target 'forgeserver' with arguments []
+[03:07:57] [modloading-worker-0/INFO]: Forge mod loading, version 39.0.19, for MC 1.18.1 with MCP 20211210.034407
+[03:07:57] [modloading-worker-0/INFO]: MinecraftForge v39.0.19 Initialized
+[03:07:58] [Forge Version Check/INFO]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[03:07:59] [Forge Version Check/INFO]: [forge] Found status: BETA_OUTDATED Current: 39.0.19 Target: 39.0.20
+[03:08:00] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[03:08:00] [main/INFO]: Injecting existing registry data into this CLIENT instance
+[03:08:01] [main/WARN]: Assets URL 'union:/opt/minecraft-server/libraries/net/minecraft/server/1.18.1-20211210.034407/server-1.18.1-20211210.034407-srg.jar%2338!/assets/.mcassetsroot' uses unexpected schema
+[03:08:01] [main/WARN]: Assets URL 'union:/opt/minecraft-server/libraries/net/minecraft/server/1.18.1-20211210.034407/server-1.18.1-20211210.034407-srg.jar%2338!/data/.mcassetsroot' uses unexpected schema
+[03:08:02] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03:08:02] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03:08:03] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[03:08:03] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[03:08:03] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[03:08:03] [main/INFO]: Reloading ResourceManager: Default, forge-1.18.1-39.0.19-universal.jar
+[03:08:04] [Worker-Main-8/INFO]: Loaded 7 recipes
+[03:08:05] [Worker-Main-8/INFO]: Loaded 1141 advancements
+[03:08:06] [Server thread/INFO]: Starting minecraft server version 1.18.1
+[03:08:06] [Server thread/INFO]: Loading properties
+[03:08:06] [Server thread/INFO]: Default game type: SURVIVAL
+[03:08:06] [Server thread/INFO]: Generating keypair
+[03:08:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[03:08:06] [Server thread/INFO]: Using epoll channel type
+[03:08:07] [Server thread/INFO]: Preparing level "world"
+[03:08:07] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[03:08:08] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[03:08:11] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[03:08:12] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[03:08:12] [Worker-Main-9/INFO]: Preparing spawn area: 10%
+[03:08:13] [Worker-Main-7/INFO]: Preparing spawn area: 28%
+[03:08:13] [Worker-Main-8/INFO]: Preparing spawn area: 44%
+[03:08:14] [Worker-Main-10/INFO]: Preparing spawn area: 69%
+[03:08:14] [Worker-Main-8/INFO]: Preparing spawn area: 79%
+[03:08:15] [Worker-Main-6/INFO]: Preparing spawn area: 84%
+[03:08:16] [Worker-Main-9/INFO]: Preparing spawn area: 86%
+[03:08:16] [Worker-Main-10/INFO]: Preparing spawn area: 86%
+[03:08:16] [Worker-Main-7/INFO]: Preparing spawn area: 87%
+[03:08:17] [Worker-Main-8/INFO]: Preparing spawn area: 89%
+[03:08:17] [Worker-Main-6/INFO]: Preparing spawn area: 94%
+[03:08:18] [Worker-Main-10/INFO]: Preparing spawn area: 98%
+[03:08:18] [Server thread/INFO]: Time elapsed: 11159 ms
+[03:08:18] [Server thread/INFO]: Done (11.396s)! For help, type "help"
+[03:08:18] [Server thread/INFO]: Successfully initialized permission handler forge:default_handler
+[03:18:40] [User Authenticator #1/INFO]: UUID of player totto2727 is 6b9e86d4-50fa-4c15-8a0c-b197650e991c
+[03:18:40] [Server thread/INFO]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@32885105
+[03:18:40] [Server thread/INFO]: totto2727[/172.20.0.4:45996] logged in with entity id 267 at (-158.69999998807907, 71.0, -51.63892906376275)
+[03:18:40] [Server thread/INFO]: totto2727 joined the game
+[03:18:44] [Server thread/WARN]: UUID of added entity already exists: Chicken['Chicken'/394, l='ServerLevel[world]', x=15.07, y=71.00, z=-176.10]
+[03:18:49] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2112ms or 42 ticks behind
+[03:19:10] [Server thread/INFO]: totto2727 lost connection: Disconnected
+[03:19:10] [Server thread/INFO]: totto2727 left the game
